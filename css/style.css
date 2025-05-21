@@ -1,0 +1,44 @@
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffa726, #fb8c00);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .welcome-box {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .welcome-box h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .welcome-box p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .welcome-box a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 25px;
+      background: white;
+      color: #fb8c00;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .welcome-box a:hover {
+      background: #ffe0b2;
+    }
