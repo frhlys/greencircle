@@ -42,3 +42,50 @@
     .welcome-box a:hover {
       background: #ffe0b2;
     }
+
+    
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffa726, #fb8c00);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff3e0;
+      color: #333;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fb8c00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #ef6c00;
+    }
