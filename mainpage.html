@@ -3,51 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to task-tracker</title>
+  <title>Task Tracker</title>
   <link rel="stylesheet" href="css/mainpage.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f6fa;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 100px auto;
-      padding: 40px;
-      background-color: #fff;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      border-radius: 10px;
-    }
-    h1 {
-      color: #333;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-    a.logout {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #d63031;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    a.logout:hover {
-      background-color: #e17055;
-    }
-  </style>
+
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to the Main Page</h1>
+    <h1>Task Tracker</h1>
     <p>You have successfully logged in.</p>
+
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Completed</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td contenteditable="true">Finish Login Page</td>
+          <td contenteditable="true">2025-06-10</td>
+          <td contenteditable="true">In Progress</td>
+          <td><input type="checkbox" /></td>
+          <td>
+            <button class="btn edit-btn">Edit</button>
+            <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td contenteditable="true">Build Main Page Table</td>
+          <td contenteditable="true">2025-06-15</td>
+          <td contenteditable="true">Not Started</td>
+          <td><input type="checkbox" /></td>
+          <td>
+            <button class="btn edit-btn">Edit</button>
+            <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <a href="login.html" class="logout">Logout</a>
   </div>
+
+  <script>
+    function deleteRow(button) {
+      const row = button.closest('tr');
+      row.remove();
+    }
+  </script>
 </body>
 </html>
