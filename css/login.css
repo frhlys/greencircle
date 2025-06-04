@@ -62,3 +62,16 @@ body {
     .login-container .link a:hover {
       text-decoration: underline;
     }
+
+    .register-box {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }

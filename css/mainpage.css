@@ -7,7 +7,7 @@
       max-width: 900px;
       margin: 50px auto;
       padding: 20px;
-      border: 1px solid #ddd;
+      border: 1px solid #000000;
       border-radius: 8px;
     }
          
@@ -22,7 +22,7 @@
     }
 
     table, th, td {
-      border: 1px solid #ccc;
+      border: 1px solid #000000;
     }
 
     th, td {
@@ -56,8 +56,3 @@
       background-color: #dc3545;
       color: white;
     }
-
-
-table, th, td {
-  border:1px solid black;
-}
